@@ -136,8 +136,9 @@ header {
 }
 
 .f4b-boton-perfil {
-  color: #fff;
-  background-color: rgb(65, 214, 90);
+  color: black;
+  background-color: #6cc4dd;
+  border-color: #6cc4dd;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -145,7 +146,7 @@ header {
 .f4b-boton-perfil:hover {
   color: black;
   background-color: rgb(78, 173, 94);
-  border-color: rgb(65, 214, 90);
+  border-color: rgb(78, 173, 94);
 }
 
 .f4b-wpp {
@@ -157,8 +158,8 @@ header {
 }
 .f4b-wpp:hover {
   color: black;
-  background-color: plum;
-  border-color: plum;
+  background-color: rgb(78, 173, 94);
+  border-color: rgb(78, 173, 94);
 }
 
 /* -------------- */
@@ -299,6 +300,15 @@ footer img {
   border-style: solid; */
 }
 
+.f4b-empresa-descripcion p {
+  margin-top: 30px;
+}
+
+.f4b-empresa-descripcion ul li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .f4b-margen-empresa {
   width: 600px;
 }
@@ -357,4 +367,40 @@ footer img {
   background-color: white;
   color: black;
   font-weight: bold;
+}
+
+/* contacto */
+
+.sectionEmpresa {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.sectionEmpresa ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.f4b-formulario {
+  margin: 5%;
+}
+
+@media (max-width: 800px) {
+  .sectionEmpresa {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+  .sectionEmpresa img {
+    margin-bottom: 50px;
+    margin-top: 130px;
+  }
+}
+
+.f4b-boton-contacto {
+  margin-left: 40%;
 }

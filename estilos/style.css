@@ -80,6 +80,11 @@ header {
   margin: 20px 0px 30px 0px;
 }
 
+.flex-banner img {
+  width: 100%;
+  margin: 20px 0px 30px 0px;
+}
+
 /* /////////////////////// */
 /*         CARDS          */
 /* /////////////////////// */
@@ -239,6 +244,13 @@ footer img {
     z-index: 10;
     margin-top: 50px;
   }
+
+  .flex-banner img {
+    position: fixed;
+    z-index: 10;
+    margin-top: 25px;
+  }
+
   .destaca-banner img {
     display: none;
   }

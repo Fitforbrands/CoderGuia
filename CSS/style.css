@@ -1,19 +1,18 @@
-/* /////////////////////// */
-/*         GENERAL          */
-/* /////////////////////// */
+/*         Global          */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;900&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;900&display=swap");
-
-/* /////////////////////// */
 /*         HEADER + NAV    */
-/* /////////////////////// */
-
 header {
   margin-bottom: 80px;
+}
+@media (max-width: 700px) {
+  header {
+    margin-bottom: 60px;
+  }
 }
 
 .f4b-logo {
@@ -28,7 +27,6 @@ header {
   width: 80%;
   justify-content: space-around;
 }
-
 .f4b-nav li:hover {
   font-weight: bold;
 }
@@ -47,7 +45,6 @@ header {
   margin-top: 15px;
   align-items: center;
 }
-
 .f4b-redes li a {
   color: black;
   font-size: 20px;
@@ -63,34 +60,48 @@ header {
   border-bottom: black solid 4px;
 }
 
+/* SLIDER X 3 */
 /* //////////// */
 /* SLIDER X 3 */
 /* //////////// */
-
 .carousel {
-  margin: 00px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
-/* /////////////////////// */
 /*      BANNER DE ZONA     */
-/* /////////////////////// */
-
 .zona-banner img {
   width: 100%;
   margin: 20px 0px 30px 0px;
+}
+@media (max-width: 700px) {
+  .zona-banner img {
+    position: fixed;
+    z-index: 10;
+    margin-top: 50px;
+  }
 }
 
 .flex-banner img {
   width: 100%;
   margin: 20px 0px 30px 0px;
 }
+@media (max-width: 700px) {
+  .flex-banner img {
+    position: fixed;
+    z-index: 10;
+    margin-top: 25px;
+  }
+}
 
-/* /////////////////////// */
 /*         CARDS          */
-/* /////////////////////// */
-
 .card {
   align-items: center;
+}
+
+@media (max-width: 700px) {
+  .primeraCard {
+    margin-top: 110px;
+  }
 }
 
 .f4b-imagen-card {
@@ -99,6 +110,11 @@ header {
   max-height: 600px;
   max-width: 100%;
   border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .f4b-imagen-card {
+    max-height: 300px;
+  }
 }
 
 .f4b-nombre {
@@ -119,13 +135,13 @@ header {
 }
 
 /* Ficha tecnica de la card */
-
 .f4b-destacado {
   color: black;
   background-color: yellow;
   border-color: yellow;
   font-size: 14px;
 }
+
 .f4b-dest-zonas {
   color: whitesmoke;
   background-color: black;
@@ -134,7 +150,6 @@ header {
 }
 
 /* Botones de la card */
-
 .f4b-div-botones {
   width: 290px;
   justify-content: center;
@@ -147,7 +162,6 @@ header {
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .f4b-boton-perfil:hover {
   color: black;
   background-color: rgb(78, 173, 94);
@@ -167,22 +181,29 @@ header {
   border-color: rgb(78, 173, 94);
 }
 
-/* -------------- */
 /* BANNER PUBLICA */
-/* -------------- */
-
 .destaca-banner img {
   width: 100%;
   margin: 20px 0px 30px 0px;
 }
+@media (max-width: 700px) {
+  .destaca-banner img {
+    display: none;
+  }
+}
+
 .destaca-banner-min img {
   display: none;
 }
+@media (max-width: 700px) {
+  .destaca-banner-min img {
+    display: unset;
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+  }
+}
 
-/* ------ */
 /* FOOTER */
-/* ------ */
-
 footer {
   display: grid;
   grid-template-areas: "logo pos1 pos2";
@@ -192,9 +213,40 @@ footer {
   height: 130px;
   background-color: #6cc4dd;
 }
+@media (max-width: 700px) {
+  footer {
+    grid-template-areas: "logo" "pos2" "pos1";
+    justify-content: center;
+  }
+}
+footer a img {
+  width: 200px;
+}
+footer p {
+  margin-bottom: 0px;
+}
+footer ul {
+  display: flex;
+  width: 150px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+footer ul li a img {
+  width: 30px;
+}
 
 .logo-footer {
   grid-area: logo;
+}
+@media (max-width: 700px) {
+  .logo-footer {
+    height: 50px;
+    width: auto;
+    margin-left: 40px;
+  }
 }
 
 .p-footer {
@@ -204,87 +256,7 @@ footer {
 .redes-footer {
   grid-area: pos2;
 }
-
-footer p {
-  margin-bottom: 0px;
-}
-
-footer ul {
-  display: flex;
-  width: 150px;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0px;
-}
-
-footer ul li a img {
-  width: 30px;
-}
-
-footer img {
-  width: 200px;
-}
-
-/* ------ */
-/* MOBILE  */
-/* ------ */
-
 @media (max-width: 700px) {
-  /* Header */
-
-  header {
-    margin-bottom: 60px;
-  }
-
-  /* Banner de zona y de publica en fletear */
-
-  .zona-banner img {
-    position: fixed;
-    z-index: 10;
-    margin-top: 50px;
-  }
-
-  .flex-banner img {
-    position: fixed;
-    z-index: 10;
-    margin-top: 25px;
-  }
-
-  .destaca-banner img {
-    display: none;
-  }
-
-  .destaca-banner-min img {
-    display: unset;
-    width: 100%;
-    margin: 20px 0px 30px 0px;
-  }
-
-  /* AJUSTES DE CARD */
-
-  .primeraCard {
-    margin-top: 110px;
-  }
-
-  .f4b-imagen-card {
-    max-height: 300px;
-  }
-
-  /* FOOTER */
-
-  footer {
-    grid-template-areas:
-      "logo"
-      "pos2"
-      "pos1";
-    justify-content: center;
-  }
-  .logo-footer {
-    height: 50px;
-    width: auto;
-    margin-left: 40px;
-  }
   .redes-footer {
     margin-left: 20px;
     margin-bottom: 5px;
@@ -292,14 +264,12 @@ footer img {
 }
 
 /* EMPRESA */
-
 .empresas-global {
   display: flex;
   justify-content: space-between;
 }
 
 .f4b-empresa-descripcion {
-  /* background-color: rgb(242, 243, 243); */
   border-radius: 25px;
   margin-right: 5%;
   margin-top: 10px;
@@ -307,15 +277,10 @@ footer img {
   height: 800px;
   padding: 30px;
   text-align: center;
-  /* border-color: rgb(238, 237, 237);
-  border-width: 5px;
-  border-style: solid; */
 }
-
 .f4b-empresa-descripcion p {
   margin-top: 30px;
 }
-
 .f4b-empresa-descripcion ul li {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -332,7 +297,6 @@ footer img {
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(#1eb05f, 20%, #6cc4dd);
-  /* border-color: #232323 solid 5px; */
   border-radius: 25px;
   font-family: montserrat;
   width: 300px;
@@ -340,11 +304,7 @@ footer img {
   left: 10px;
   bottom: 300px;
   top: 90px;
-  /* border-color: #2ab46d;
-  border-width: 5px;
-  border-style: solid; */
 }
-
 .f4b-ficha-empresa img {
   width: 100px;
   height: 100px;
@@ -353,52 +313,27 @@ footer img {
   border-width: 5px;
   border-style: solid;
 }
-
 .f4b-ficha-empresa p {
   font-size: 20px;
 }
-
 .f4b-ficha-empresa ul {
   padding: 0px;
   list-style: none;
   width: 200px;
   border-width: 5px;
 }
-
 .f4b-ficha-empresa a {
   text-decoration: none;
   font-family: roboto;
-
   background-color: black;
   color: white;
   padding: 10px 30px 10px 30px;
   border-radius: 15px;
 }
-
 .f4b-ficha-empresa a:hover {
   background-color: white;
   color: black;
   font-weight: bold;
-}
-
-/* contacto */
-
-.sectionEmpresa {
-  display: flex;
-  flex-direction: row;
-  margin: 5%;
-}
-
-.sectionEmpresa ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
-.f4b-formulario {
-  margin: 5%;
 }
 
 @media (max-width: 800px) {
@@ -412,7 +347,39 @@ footer img {
     margin-top: 130px;
   }
 }
+/* contacto */
+.sectionEmpresa {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+@media (max-width: 800px) {
+  .sectionEmpresa {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .sectionEmpresa img {
+    margin-bottom: 50px;
+    margin-top: 130px;
+  }
+}
+.sectionEmpresa ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.f4b-formulario {
+  margin: 5%;
+}
 
 .f4b-boton-contacto {
   margin-left: 40%;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,11 +4,14 @@
 
 .f4b-primera-fila {
   margin-top: 150px;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
 }
 
 .primeraCard {
   @media (max-width: 700px) {
-    margin-top: 110px;
+    margin-top: 150px;
   }
 }
 

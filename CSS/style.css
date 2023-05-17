@@ -65,7 +65,7 @@ header {
 /* SLIDER X 3 */
 /* //////////// */
 .carousel {
-  margin: 0px 0px 20px 0px;
+  margin: 100px 0px 20px 0px;
 }
 
 /*      BANNER DE ZONA     */
@@ -129,10 +129,15 @@ header {
 .f4b-primera-fila {
   margin-top: 150px;
 }
+@media (max-width: 700px) {
+  .f4b-primera-fila {
+    margin-top: 30px;
+  }
+}
 
 @media (max-width: 700px) {
   .primeraCard {
-    margin-top: 110px;
+    margin-top: 150px;
   }
 }
 
@@ -426,7 +431,6 @@ footer ul li a img {
   list-style: none;
 }
 .sectionEmpresa h2 {
-  width: 600px;
   text-align: center;
   animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */

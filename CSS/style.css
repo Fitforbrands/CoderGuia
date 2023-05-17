@@ -52,7 +52,7 @@ header {
 
 .nav-item a {
   font-size: 20px;
-  font-family: "roboto";
+  font-family: roboto;
 }
 
 .f4b-nav-estoyaca {
@@ -69,15 +69,43 @@ header {
 }
 
 /*      BANNER DE ZONA     */
-.zona-banner img {
+.zona-bannerV2 {
+  background: #25d366;
+  background: linear-gradient(90deg, #25d366 0%, #6cc4dd 100%);
+  margin-top: 30px;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+.zona-bannerV2 img {
+  display: none;
+  z-index: 0;
+  position: fixed;
   width: 100%;
   margin: 20px 0px 30px 0px;
 }
 @media (max-width: 700px) {
-  .zona-banner img {
+  .zona-bannerV2 img {
     position: fixed;
     z-index: 10;
     margin-top: 50px;
+  }
+}
+.zona-bannerV2 h1 {
+  font-family: roboto;
+  margin-top: 30px;
+  margin-left: 40%;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+@media (max-width: 700px) {
+  .zona-bannerV2 h1 {
+    margin-left: 30%;
+    margin-top: 45px;
   }
 }
 
@@ -96,6 +124,10 @@ header {
 /*         CARDS          */
 .card {
   align-items: center;
+}
+
+.f4b-primera-fila {
+  margin-top: 150px;
 }
 
 @media (max-width: 700px) {
@@ -392,6 +424,12 @@ footer ul li a img {
   justify-content: center;
   align-items: center;
   list-style: none;
+}
+.sectionEmpresa h2 {
+  width: 600px;
+  text-align: center;
+  animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .f4b-formulario {

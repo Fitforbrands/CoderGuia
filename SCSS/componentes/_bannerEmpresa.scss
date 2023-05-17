@@ -15,4 +15,10 @@
     @include f4b-disp-full(flex, column, center, center);
     list-style: none;
   }
+  h2 {
+    width: 600px;
+    text-align: center;
+    animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
 }

@@ -1,10 +1,8 @@
 .sectionEmpresa {
-  display: flex;
-  flex-direction: row;
+  @include f4b-disp-simple(flex, row);
   margin: 5%;
   @media (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
+    @include f4b-disp-simple(flex, column);
     margin: 5%;
   }
   img {
@@ -14,10 +12,7 @@
     }
   }
   ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include f4b-disp-full(flex, column, center, center);
     list-style: none;
   }
 }

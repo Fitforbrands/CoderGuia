@@ -23,7 +23,7 @@ header {
 }
 
 .f4b-nav-color {
-  background-color: nth($colores, 1);
+  background-color: map-get($fletes, f4b-bg-header);
 }
 
 .f4b-redes {

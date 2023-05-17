@@ -1,6 +1,8 @@
 .empresas-global {
-  display: flex;
-  justify-content: space-between;
+  @include f4b-disp-simple(flex, row);
+  @media (max-width: 700px) {
+    @include f4b-disp-full(flex, column, space-between, center);
+  }
 }
 
 .f4b-empresa-descripcion {
@@ -18,6 +20,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .f4b-margen-empresa {
@@ -26,10 +31,7 @@
 
 .f4b-ficha-empresa {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  @include f4b-disp-full(flex, column, space-around, center);
   background: linear-gradient(#1eb05f, 20%, #6cc4dd);
   border-radius: 25px;
   font-family: montserrat;
@@ -68,12 +70,15 @@
       font-weight: bold;
     }
   }
+  @media (max-width: 800px) {
+    position: static;
+    width: 400px;
+  }
 }
 
 @media (max-width: 800px) {
   .sectionEmpresa {
-    display: flex;
-    flex-direction: column;
+    @include f4b-disp-simple(flex, column);
     margin: 5%;
     img {
       margin-bottom: 50px;

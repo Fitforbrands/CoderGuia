@@ -121,7 +121,7 @@ header {
   font-weight: bold;
   text-align: center;
   font-size: 16px;
-  background-color: rgb(65, 214, 90);
+  background-color: #25d366;
   color: #232323;
   border-radius: 15px;
   padding: 5px;
@@ -164,21 +164,21 @@ header {
 }
 .f4b-boton-perfil:hover {
   color: black;
-  background-color: rgb(78, 173, 94);
-  border-color: rgb(78, 173, 94);
+  background-color: #2b99b8;
+  border-color: #2b99b8;
 }
 
 .f4b-wpp {
   color: #fff;
-  background-color: green;
-  border-color: green;
+  background-color: #25d366;
+  border-color: #25d366;
   padding-left: 50px;
   padding-right: 50px;
 }
 .f4b-wpp:hover {
-  color: black;
-  background-color: rgb(78, 173, 94);
-  border-color: rgb(78, 173, 94);
+  color: white;
+  background-color: #1da851;
+  border-color: #1da851;
 }
 
 /* BANNER PUBLICA */
@@ -227,10 +227,11 @@ footer p {
 }
 footer ul {
   display: flex;
-  width: 150px;
-  list-style: none;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 150px;
+  list-style: none;
   margin-bottom: 0px;
   padding-left: 0px;
 }
@@ -266,7 +267,15 @@ footer ul li a img {
 /* EMPRESA */
 .empresas-global {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 700px) {
+  .empresas-global {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .f4b-empresa-descripcion {
@@ -284,6 +293,11 @@ footer ul li a img {
 .f4b-empresa-descripcion ul li {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+@media (max-width: 800px) {
+  .f4b-empresa-descripcion {
+    width: 100%;
+  }
 }
 
 .f4b-margen-empresa {
@@ -334,6 +348,12 @@ footer ul li a img {
   background-color: white;
   color: black;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .f4b-ficha-empresa {
+    position: static;
+    width: 400px;
+  }
 }
 
 @media (max-width: 800px) {

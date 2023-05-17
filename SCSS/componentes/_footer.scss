@@ -5,7 +5,7 @@ footer {
   align-items: center;
   margin-top: 20px;
   height: 130px;
-  background-color: #6cc4dd;
+  background-color: map-get($fletes, f4b-bg-footer);
   @media (max-width: 700px) {
     grid-template-areas:
       "logo"
@@ -20,11 +20,9 @@ footer {
     margin-bottom: 0px;
   }
   ul {
-    display: flex;
+    @include f4b-disp-full(flex, row, space-between, center);
     width: 150px;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 0px;
     padding-left: 0px;
     li a img {

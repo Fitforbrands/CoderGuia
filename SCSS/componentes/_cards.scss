@@ -23,7 +23,7 @@
   font-weight: bold;
   text-align: center;
   font-size: 16px;
-  background-color: rgb(65, 214, 90);
+  background-color: map-get($fletes, f4b-nombre);
   color: #232323;
   border-radius: 15px;
   padding: 5px;
@@ -60,26 +60,26 @@
 
 .f4b-boton-perfil {
   color: black;
-  background-color: #6cc4dd;
-  border-color: #6cc4dd;
+  background-color: map-get($fletes, f4b-btn-perfil);
+  border-color: map-get($fletes, f4b-btn-perfil);
   padding-left: 50px;
   padding-right: 50px;
   &:hover {
     color: black;
-    background-color: rgb(78, 173, 94);
-    border-color: rgb(78, 173, 94);
+    background-color: darken(map-get($fletes, f4b-btn-perfil), 20);
+    border-color: darken(map-get($fletes, f4b-btn-perfil), 20);
   }
 }
 
 .f4b-wpp {
   color: #fff;
-  background-color: green;
-  border-color: green;
+  background-color: map-get($fletes, f4b-btn-wpp);
+  border-color: map-get($fletes, f4b-btn-wpp);
   padding-left: 50px;
   padding-right: 50px;
   &:hover {
-    color: black;
-    background-color: rgb(78, 173, 94);
-    border-color: rgb(78, 173, 94);
+    color: white;
+    background-color: darken(map-get($fletes, f4b-btn-wpp), 10);
+    border-color: darken(map-get($fletes, f4b-btn-wpp), 10);
   }
 }

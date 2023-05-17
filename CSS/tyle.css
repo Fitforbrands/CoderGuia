@@ -358,8 +358,9 @@ footer ul li a img {
 }
 @media (max-width: 800px) {
   .f4b-ficha-empresa {
-    position: static;
-    margin-top: 50px;
+    position: fixed;
+    margin-top: 150px;
+    margin-left: 50px;
   }
 }
 .f4b-ficha-empresa img {
@@ -426,7 +427,7 @@ footer ul li a img {
 @media (max-width: 800px) {
   .sectionEmpresa img {
     margin-bottom: 50px;
-    margin-top: 70px;
+    margin-top: 130px;
   }
 }
 .sectionEmpresa ul {
@@ -450,4 +451,4 @@ footer ul li a img {
   margin-left: 40%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=tyle.css.map */

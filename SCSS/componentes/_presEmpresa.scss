@@ -40,6 +40,10 @@
   left: 10px;
   bottom: 300px;
   top: 90px;
+  @media (max-width: 800px) {
+    position: static;
+    margin-top: 50px;
+  }
   img {
     width: 100px;
     height: 100px;

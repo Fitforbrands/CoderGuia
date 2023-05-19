@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+.row {
+  padding: 0;
+  margin: 0;
+}
+
 /*         HEADER + NAV    */
 header {
   margin-bottom: 80px;
@@ -65,14 +70,13 @@ header {
 /* SLIDER X 3 */
 /* //////////// */
 .carousel {
-  margin: 100px 0px 20px 0px;
+  margin: 100px 0px 0px 0px;
 }
 
 /*      BANNER DE ZONA     */
 .zona-bannerV2 {
   background: #25d366;
   background: linear-gradient(90deg, #25d366 0%, #6cc4dd 100%);
-  margin-top: 30px;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -127,7 +131,7 @@ header {
 }
 
 .f4b-primera-fila {
-  margin-top: 150px;
+  margin-top: 125px;
 }
 @media (max-width: 700px) {
   .f4b-primera-fila {
@@ -137,7 +141,7 @@ header {
 
 @media (max-width: 700px) {
   .primeraCard {
-    margin-top: 150px;
+    margin-top: 130px;
   }
 }
 
@@ -221,7 +225,7 @@ header {
 /* BANNER PUBLICA */
 .destaca-banner img {
   width: 100%;
-  margin: 20px 0px 30px 0px;
+  margin: 20px 0px 0px 0px;
 }
 @media (max-width: 700px) {
   .destaca-banner img {
@@ -236,7 +240,7 @@ header {
   .destaca-banner-min img {
     display: unset;
     width: 100%;
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px 0px 0px;
   }
 }
 
@@ -414,19 +418,17 @@ footer ul li a img {
 .sectionEmpresa {
   display: flex;
   flex-direction: row;
-  margin: 5%;
 }
 @media (max-width: 800px) {
   .sectionEmpresa {
     display: flex;
     flex-direction: column;
-    margin: 5%;
   }
 }
 @media (max-width: 800px) {
   .sectionEmpresa img {
     margin-bottom: 50px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 }
 .sectionEmpresa ul {
@@ -435,6 +437,9 @@ footer ul li a img {
   justify-content: center;
   align-items: center;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
 }
 .sectionEmpresa h2 {
   text-align: center;
@@ -448,6 +453,11 @@ footer ul li a img {
 
 .f4b-boton-contacto {
   margin-left: 40%;
+}
+@media (max-width: 800px) {
+  .f4b-boton-contacto {
+    margin-left: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

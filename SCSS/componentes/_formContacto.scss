@@ -4,4 +4,7 @@
 
 .f4b-boton-contacto {
   margin-left: 40%;
+  @media (max-width: 800px) {
+    margin-left: 30%;
+  }
 }

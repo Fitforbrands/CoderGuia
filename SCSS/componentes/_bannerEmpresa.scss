@@ -1,19 +1,21 @@
 .sectionEmpresa {
   @include f4b-disp-simple(flex, row);
-  margin: 5%;
+
   @media (max-width: 800px) {
     @include f4b-disp-simple(flex, column);
-    margin: 5%;
   }
   img {
     @media (max-width: 800px) {
       margin-bottom: 50px;
-      margin-top: 70px;
+      margin-top: 90px;
     }
   }
   ul {
     @include f4b-disp-full(flex, column, center, center);
     list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
   }
   h2 {
     text-align: center;

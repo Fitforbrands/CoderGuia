@@ -65,6 +65,10 @@ header {
   border-bottom: black solid 4px;
 }
 
+.dropdown-item:active {
+  background-color: #6cc4dd;
+}
+
 /* SLIDER X 3 */
 /* //////////// */
 /* SLIDER X 3 */
